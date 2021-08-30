@@ -1,0 +1,22 @@
+package pe.java;
+
+import java.util.Scanner;
+
+public class Introduction {
+
+    public static void main(String[] args){
+        Scanner op = new Scanner(System.in);
+        System.out.print("Nota del Parcial: ");
+        int n1 = op.nextInt();
+        System.out.print("Nota del Final: ");
+        int n2 = op.nextInt();
+        int promedio = (n1+n2)/2;
+        if(promedio >= 10.5){
+            System.out.println("Aprobado - "+ promedio);
+        }else if (!(promedio >= 8)){
+            System.out.println("No puedes ir al complementario - "+ promedio);
+        }else{
+            System.out.println("Desaprobado - Puedes ir al complementario - " + promedio);
+        }
+    }
+}
